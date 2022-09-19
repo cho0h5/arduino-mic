@@ -12,7 +12,7 @@ void loop() {
 }
 
 ISR(TIMER0_COMPA_vect) {  // 8000hz
-  Serial.println(readADC());
+  Serial.write(readADC());
 }
 
 void initADC() {
